@@ -1,0 +1,37 @@
+{
+  "encodedKey": "8a8586c5718588a20171881b4bc86de3",
+  "id": "1309",
+  "creationDate": "2020-04-17T15:02:39+02:00",
+  "valueDate": "2020-04-17T15:02:39+02:00",
+  "parentAccountKey": "8a8587506b566dfd016b5add799444ec",
+  "type": "TRANSFER",
+  "amount": -11.11,
+  "currencyCode": "EUR",
+  "affectedAmounts": {
+    "fundsAmount": 11.11,
+    "interestAmount": 0,
+    "feesAmount": 0,
+    "overdraftAmount": 0,
+    "overdraftFeesAmount": 0,
+    "overdraftInterestAmount": 0,
+    "technicalOverdraftAmount": 0,
+    "technicalOverdraftInterestAmount": 0,
+    "fractionAmount": 0
+  },
+  "taxes": {},
+  "accountBalances": {
+    "totalBalance": 1679.89
+  },
+  "userKey": "8a8587b371776b9e01717d217e6e1492",
+  "branchKey": "8a8587376ad96493016ada758e6208e6",
+  "terms": {
+    "interestSettings": {},
+    "overdraftInterestSettings": {},
+    "overdraftSettings": {}
+  },
+  "transactionDetails": {},
+  "transferDetails": {
+    "linkedDepositTransactionKey": "8a8586c5718588a20171883be60f760c"
+  },
+  "fees": []
+}
