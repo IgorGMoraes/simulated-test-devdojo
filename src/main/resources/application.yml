@@ -1,1 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/transaction
+    username: postgres
+    password: password
+    initialization-mode: always
 
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+#  autoconfigure:
+#    exclude: org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+
+server:
+  error:
+    include-stacktrace: on_param

@@ -10,7 +10,6 @@ public abstract class TransactionMapper {
 
     public static final TransactionMapper INSTANCE = Mappers.getMapper(TransactionMapper.class);
 
-
     @Mappings({
             @Mapping(source = "encodedKey", target = "id"),
             @Mapping(source = "parentAccountKey", target = "arrangementId"),
@@ -28,7 +27,7 @@ public abstract class TransactionMapper {
         transactionDto.setInstructedAmount(transactionDto.getAmount());
     }
 
-    //As all currencyCode are EUR I'll simplify this method to an simple if
+    //Since all currencyCode are "EUR" I'll simplify this method to an if
     @AfterMapping
     protected void setCurrency(@MappingTarget TransactionDto transactionDto){
         if("EUR".equals(transactionDto.getCurrencyCode())){

@@ -1,4 +1,12 @@
-package com.igor.simulatedtestdevdojo.models;import com.fasterxml.jackson.annotation.JsonIgnoreProperties;import com.fasterxml.jackson.annotation.JsonProperty;import lombok.AllArgsConstructor;import lombok.Builder;import lombok.Data;import lombok.NoArgsConstructor;import javax.persistence.*;import java.time.LocalDateTime;import java.util.Date;
+package com.igor.simulatedtestdevdojo.models;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.util.Map;
 
 @Data
@@ -19,8 +27,8 @@ public class Transaction {
     private Long id;
 
     @JsonProperty("accountBalances")
-    private void unpackNested(Map<String,Object> accountBalances) {
-        this.totalBalance = (double)accountBalances.get("totalBalance");
+    private void setTotalBalance(Map<String, String> accountBalances) {
+        this.totalBalance = Double.parseDouble(accountBalances.get("totalBalance"));
     }
 
 }
